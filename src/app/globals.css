@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* On applique nos couleurs par défaut sur tout le site */
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+}
+
+@layer utilities {
+  /* Notre utilitaire pour l'effet "verre dépoli" */
+  .glass {
+    @apply bg-zinc-900/40 backdrop-blur-md border border-white/10;
+  }
+
+  /* Cache la barre de scroll (utile pour le mobile) */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  /* Gestion de la zone de sécurité iPhone (l'encoche) */
+  .pb-safe {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+}
