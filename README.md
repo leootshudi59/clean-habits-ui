@@ -4,9 +4,9 @@
 
 ChainHabits is a **habit tracking** and **social challenge** platform where users commit to routines, stake tokens, and get rewarded (or penalised) based on how well they stick to their habits.
 
-- You join a **group challenge** (e.g. “Habitants”).
+- You join a **group challenge**.
 - You define the **habits** you commit to (with difficulty levels).
-- You **stake** an amount of tokens into a common pool.
+- You **stake** an amount of tokens into a common pool (~ "betting" on your habits).
 - Every day you log your progress:
   - manually (“I completed this habit”), or
   - automatically via integrations (Strava, Github, health APIs, etc.).
@@ -14,6 +14,8 @@ ChainHabits is a **habit tracking** and **social challenge** platform where user
   - scores are computed from your completion, difficulty and streaks,
   - a smart contract distributes the pot based on those scores,
   - you can claim your rewards on-chain.
+
+Under the hood, the common pot is redistributed pro-rata of how well you stick to your routines, with a few performance tiers. If everyone completes more than a certain high threshold of their target points (for example >90%), then everyone simply gets back their full stake plus a shared bonus at the end of the challenge. Otherwise, users above a “strong performance” threshold (e.g. >85% of points) are guaranteed to get back their stake with a bonus, and that bonus pool is split between them pro-rata to their completion percentage. This bonus pool comes from the penalties of users who don’t reach the minimum bar (e.g. <80%): for each missing percentage point below that bar, they lose a small fraction of their initial stake (for example 0.5% of their stake per 1% of missing points) in their final payout. On top of that, users in the top tier (e.g. >95%) can earn extra non-monetary rewards from the app itself, such as rare trophies or “skip habit” tokens (see later). All thresholds and percentages are configurable and can be tuned per challenge.
 
 This repository focuses on the **web frontend**, built with **Next.js** in a **mobile-first** approach, and designed to plug into:
 
@@ -53,6 +55,150 @@ This repository focuses on the **web frontend**, built with **Next.js** in a **m
   - This **web app (Next.js)**, mobile-first:
     - easier for dev iteration and admin / coach dashboards,
     - still usable as a regular user client.
+
+---
+
+## 💰 Business model ideas
+
+ChainHabits is designed to enable multiple, combinable revenue streams while staying aligned with the core mission: **help people stick to their habits without turning the product into a casino**.
+
+High-level mix:
+
+- 🔹 **Micro-monetisation B2C**: skip tokens + power-ups  
+- 🔹 **Premium subscription**: advanced stats, automation, extra features  
+- 🔹 **On-chain platform fees**: small transparent rake on challenge pots  
+- 🔹 **B2B / teams & coaches**: companies and creators paying for their own challenges  
+- 🔹 **Utility token & NFTs**: Web3-native ecosystem without “investment” promises  
+
+### 1. Micro-monetisation (B2C): skips & power-ups
+
+**Weekly skip rule (baseline idea):**
+
+- By default, each user gets **1 free skip per week**:
+  - they can miss one habit/day but still keep their points and streak.
+- If they want to **skip a second habit** in the same week *and still get full points*, they have to **pay**.
+
+This is extended into a proper system:
+
+- **Skip tokens**:
+  - Every user gets 1 free skip token per week.
+  - Additional skip tokens can be bought (fiat or protocol token).
+  - Hard cap per challenge/period (e.g. max 2–3 paid skips per month) to avoid abuse.
+
+- **Contextual skips**:
+  - “Sick day” skip (less harsh, different price/limit).
+  - “Travel day” skip (for trips / jetlag), possibly bundled with calendar data.
+
+- **Power-ups** (limited, not pure pay-to-win):
+  - **Freeze Streak**: pause your streak for a few days (no points, but streak preserved).
+  - **Double XP Day**: one day where your habit points are doubled.
+  - **Streak Revival**: recover a broken streak once per challenge.
+  - **Focus Booster**: temporarily increase the weight of selected “hard” habits.
+
+Design constraints:
+
+- hard limits per user/challenge,
+- some power-ups can only be **earned** (not bought),
+- keep economic impact bounded so that performance still matters more than spending.
+
+### 2. Premium subscription (CleanHabits+)
+
+A recurring subscription for heavy users who want more depth and automation:
+
+- **Premium features**:
+  - Advanced analytics:
+    - detailed breakdown by habit type,
+    - streak heatmaps,
+    - “weakest days / hours” analysis,
+    - recommendations.
+  - Enhanced automation:
+    - unlimited integrations (Strava, Apple Health, Google Fit, Github…),
+    - auto-check rules (e.g. “if Strava says ≥30min run → auto-complete this habit”).
+  - Access to **premium challenges**:
+    - curated, higher-quality groups,
+    - larger pots or better reward structures.
+
+- **Quality-of-life perks**:
+  - more free skips per month,
+  - more active challenges in parallel,
+  - exclusive visual themes and profile customisation,
+  - special badges or cosmetic NFTs.
+
+The subscription can be paid in fiat or the protocol’s token, with potential discounts for token usage.
+
+### 3. On-chain platform fees
+
+For every on-chain challenge:
+
+- A small **platform fee** is taken from the pot (e.g. 1–5%), fully transparent:
+  - visible in the challenge creation UI,
+  - encoded in the smart contract.
+- Variants:
+  - community challenges with **low fees**,
+  - premium / co-branded challenges with **higher fees** and extra services (support, coaching, content).
+
+This fee is automatically routed on-chain to the protocol treasury or revenue addresses.
+
+### 4. B2B: companies, teams & coaches
+
+ChainHabits can be packaged for organisations:
+
+- **For companies / teams**:
+  - “ChainHabits for Teams”:
+    - HR/wellbeing/productivity challenges for employees,
+    - company-sponsored pots and rewards,
+    - dashboards for participation and anonymised stats.
+  - Business model:
+    - per-seat pricing,
+    - or per-challenge packs,
+    - plus optional add-ons (custom branding, integrations, support).
+
+- **For coaches / creators / influencers**:
+  - They can create their **own challenges** (fitness, coding, language learning, etc.):
+    - set entry fees and stakes,
+    - design rules and content.
+  - Revenue:
+    - a share goes to the coach,
+    - a share goes to ChainHabits as a platform fee.
+  - ChainHabits provides:
+    - infra (smart contracts + scoring backend),
+    - dashboards,
+    - participants management.
+
+Long term, ChainHabits can evolve into a **“challenge-as-a-service”** platform for behaviour change.
+
+### 5. Utility token & NFTs
+
+Without turning the token into a speculative asset, ChainHabits can support:
+
+- **Utility token (e.g. HABIT)**:
+  - Used to:
+    - pay for skip tokens and certain power-ups,
+    - reduce platform fees if paying in HABIT,
+    - access token-gated premium challenges.
+  - Part of the token used for utilities can be:
+    - **burned** (deflationary pressure),
+    - or **redistributed** to top performers / long-term stakers.
+
+- **NFTs**:
+  - **Trophy NFTs**:
+    - 30-day streak,
+    - perfect challenge (0 missed days),
+    - early bird (X days completed before 7am), etc.
+  - **Pass NFTs**:
+    - access to exclusive challenges,
+    - cosmetic perks,
+    - or mild boosts, within strict limits.
+
+Monetisation:
+
+- mint fees for certain NFTs,
+- optional royalties on secondary markets,
+- NFTs as part of premium bundles.
+
+All of this is built under a guiding principle:  
+> **Help people build habits, don’t exploit addiction.**  
+So limits, transparency, and a clear health/progression angle are integral to the business model.
 
 ---
 
@@ -208,148 +354,3 @@ Right now, this flow can update **local / mocked state** instead of calling real
   - show mock connection status,
   - clicking “Connect” simulates OAuth and toggles to “Connected”.
 - This status should be reflected in the **Daily Log** view (auto-completed habits).
-
----
-
-## 💰 Business model ideas
-
-ChainHabits is designed to enable multiple, combinable revenue streams while staying aligned with the core mission: **help people stick to their habits without turning the product into a casino**.
-
-High-level mix:
-
-- 🔹 **Micro-monetisation B2C**: skip tokens + power-ups  
-- 🔹 **Premium subscription**: advanced stats, automation, extra features  
-- 🔹 **On-chain platform fees**: small transparent rake on challenge pots  
-- 🔹 **B2B / teams & coaches**: companies and creators paying for their own challenges  
-- 🔹 **Utility token & NFTs**: Web3-native ecosystem without “investment” promises  
-
-### 1. Micro-monetisation (B2C): skips & power-ups
-
-**Weekly skip rule (baseline idea):**
-
-- By default, each user gets **1 free skip per week**:
-  - they can miss one habit/day but still keep their points and streak.
-- If they want to **skip a second habit** in the same week *and still get full points*, they have to **pay**.
-
-This is extended into a proper system:
-
-- **Skip tokens**:
-  - Every user gets 1 free skip token per week.
-  - Additional skip tokens can be bought (fiat or protocol token).
-  - Hard cap per challenge/period (e.g. max 2–3 paid skips per month) to avoid abuse.
-
-- **Contextual skips**:
-  - “Sick day” skip (less harsh, different price/limit).
-  - “Travel day” skip (for trips / jetlag), possibly bundled with calendar data.
-
-- **Power-ups** (limited, not pure pay-to-win):
-  - **Freeze Streak**: pause your streak for a few days (no points, but streak preserved).
-  - **Double XP Day**: one day where your habit points are doubled.
-  - **Streak Revival**: recover a broken streak once per challenge.
-  - **Focus Booster**: temporarily increase the weight of selected “hard” habits.
-
-Design constraints:
-
-- hard limits per user/challenge,
-- some power-ups can only be **earned** (not bought),
-- keep economic impact bounded so that performance still matters more than spending.
-
-### 2. Premium subscription (CleanHabits+)
-
-A recurring subscription for heavy users who want more depth and automation:
-
-- **Premium features**:
-  - Advanced analytics:
-    - detailed breakdown by habit type,
-    - streak heatmaps,
-    - “weakest days / hours” analysis,
-    - recommendations.
-  - Enhanced automation:
-    - unlimited integrations (Strava, Apple Health, Google Fit, Github…),
-    - auto-check rules (e.g. “if Strava says ≥30min run → auto-complete this habit”).
-  - Access to **premium challenges**:
-    - curated, higher-quality groups,
-    - larger pots or better reward structures.
-
-- **Quality-of-life perks**:
-  - more free skips per month,
-  - more active challenges in parallel,
-  - exclusive visual themes and profile customisation,
-  - special badges or cosmetic NFTs.
-
-The subscription can be paid in fiat or the protocol’s token, with potential discounts for token usage.
-
-### 3. On-chain platform fees
-
-For every on-chain challenge:
-
-- A small **platform fee** is taken from the pot (e.g. 1–5%), fully transparent:
-  - visible in the challenge creation UI,
-  - encoded in the smart contract.
-- Variants:
-  - community challenges with **low fees**,
-  - premium / co-branded challenges with **higher fees** and extra services (support, coaching, content).
-
-This fee is automatically routed on-chain to the protocol treasury or revenue addresses.
-
-### 4. B2B: companies, teams & coaches
-
-ChainHabits can be packaged for organisations:
-
-- **For companies / teams**:
-  - “ChainHabits for Teams”:
-    - HR/wellbeing/productivity challenges for employees,
-    - company-sponsored pots and rewards,
-    - dashboards for participation and anonymised stats.
-  - Business model:
-    - per-seat pricing,
-    - or per-challenge packs,
-    - plus optional add-ons (custom branding, integrations, support).
-
-- **For coaches / creators / influencers**:
-  - They can create their **own challenges** (fitness, coding, language learning, etc.):
-    - set entry fees and stakes,
-    - design rules and content.
-  - Revenue:
-    - a share goes to the coach,
-    - a share goes to ChainHabits as a platform fee.
-  - ChainHabits provides:
-    - infra (smart contracts + scoring backend),
-    - dashboards,
-    - participants management.
-
-Long term, ChainHabits can evolve into a **“challenge-as-a-service”** platform for behaviour change.
-
-### 5. Utility token & NFTs
-
-Without turning the token into a speculative asset, ChainHabits can support:
-
-- **Utility token (e.g. HABIT)**:
-  - Used to:
-    - pay for skip tokens and certain power-ups,
-    - reduce platform fees if paying in HABIT,
-    - access token-gated premium challenges.
-  - Part of the token used for utilities can be:
-    - **burned** (deflationary pressure),
-    - or **redistributed** to top performers / long-term stakers.
-
-- **NFTs**:
-  - **Trophy NFTs**:
-    - 30-day streak,
-    - perfect challenge (0 missed days),
-    - early bird (X days completed before 7am), etc.
-  - **Pass NFTs**:
-    - access to exclusive challenges,
-    - cosmetic perks,
-    - or mild boosts, within strict limits.
-
-Monetisation:
-
-- mint fees for certain NFTs,
-- optional royalties on secondary markets,
-- NFTs as part of premium bundles.
-
-All of this is built under a guiding principle:  
-> **Help people build habits, don’t exploit addiction.**  
-So limits, transparency, and a clear health/progression angle are integral to the business model.
-
