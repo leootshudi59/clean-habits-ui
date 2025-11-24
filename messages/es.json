@@ -4,12 +4,12 @@
     "title_start": "Sigue tus hábitos.",
     "title_end": "Gana Cripto.",
     "subtitle": "Únete a desafíos grupales, apuesta por tu éxito y gana el bote compartido si mantienes tus hábitos.",
-    "connect_btn": "Conectar Wallet",
+    "connect_btn": "Conectarse / Registrarse",
     "connect_sub": "Impulsado por Web3Auth • Sin gas fees",
     "dashboard_welcome": "Hola, {name}!",
     "dashboard_status": "Wallet Conectada",
     "stats_challenges": "Desafíos",
-    "stats_score": "Puntuación",
+    "stats_score": "Puntuación", 
     "enter_app_btn": "Entrar a la App"
   },
   "Concept": {
