@@ -10,7 +10,7 @@ export default function Home() {
   const tConcept = useTranslations('Concept');
 
   return (
-    <main className="min-h-screen bg-background flex flex-col items-center justify-center relative overflow-hidden selection:bg-primary selection:text-white">
+    <main className="min-h-screen flex flex-col items-center justify-center relative overflow-hidden selection:bg-primary selection:text-white">
       
       {/* --- BACKGROUND FX (Lueurs d'ambiance) --- */}
       {/* A large violet glow in the center/top */}
@@ -19,12 +19,12 @@ export default function Home() {
       <div className="absolute bottom-[-10%] right-[-10%] w-[600px] h-[400px] bg-secondary/10 rounded-full blur-[100px] -z-10 pointer-events-none" />
 
       {/* --- CONTENU --- */}
-      <div className="container mx-auto px-4 z-10 flex flex-col items-center gap-12">
+      <div className="container mx-auto px-4 z-10 flex flex-col items-center gap-12 md:gap-16">
         
         {/* 1. SECTION HERO (The Title "Home Page") */}
-        <div className="text-center space-y-6 max-w-3xl">
+        <div className="text-center max-w-3xl">
           {/* Small badge above the title */}
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-zinc-800/50 border border-white/10 text-xs font-medium text-primary mb-4 animate-fade-in">
+          <div className="inline-flex items-center gap-2 mt-1 md:mt-2 px-3 py-1 rounded-full bg-zinc-800/50 border border-white/10 text-xs font-medium text-primary mb-16 md:mb-24 animate-fade-in">
             <span className="relative flex h-2 w-2">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
@@ -32,7 +32,7 @@ export default function Home() {
             {t('badge')}
           </div>
 
-          <h1 className="text-5xl md:text-7xl font-bold font-heading tracking-tight text-white leading-tight animate-slide-up">
+          <h1 className="text-5xl md:text-7xl mb-4 md:mb-8 font-bold font-heading tracking-tight text-white leading-tight animate-slide-up">
             {t('title_start')} <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-secondary to-primary bg-[length:200%_auto] animate-pulse-slow">
               {t('title_end')}
@@ -50,7 +50,7 @@ export default function Home() {
             <div className="flex flex-col items-center gap-4">
               <button
                 onClick={() => login()}
-                className="group relative w-full sm:w-auto bg-primary hover:bg-primary-hover text-white px-8 py-4 rounded-xl font-heading font-bold text-lg shadow-neon transition-all hover:scale-105 flex items-center justify-center gap-3"
+                className="group relative w-full sm:w-auto bg-primary hover:bg-primary-btnhover text-white px-8 py-4 rounded-xl font-heading font-bold text-lg shadow-neon transition-all hover:scale-105 flex items-center justify-center gap-3"
               >
                 <Wallet size={20} />
                 {t('connect_btn')}
@@ -95,7 +95,7 @@ export default function Home() {
         </div>
 
         {/* 3. SECTION CONCEPT (Comment ça marche) */}
-        <div className="w-full max-w-5xl mt-16 animate-slide-up [animation-delay:300ms]">
+        <div className="w-full max-w-5xl mt-12 md:mt-16 mb-12 md:mb-16 animate-slide-up [animation-delay:300ms]">
           <div className="flex items-center justify-between mb-8 px-2">
             <h3 className="text-white font-heading font-bold text-2xl flex items-center gap-2">
               <Target className="text-primary" size={24}/> 

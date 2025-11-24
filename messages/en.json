@@ -23,7 +23,7 @@
     "step2_title": "Daily Tracking",
     "step2_desc": "Validate your habits every day:",
     "step2_list1": "Manual validation",
-    "step2_list2": "API Sync (Strava, GitHub...)",
+    "step2_list2": "API Sync (Strava, Yazio, GitHub...)",
     "step3_badge": "Step 3",
     "step3_title": "Web3 Rewards",
     "step3_desc": "At the end of the challenge, the Smart Contract distributes the pot.",

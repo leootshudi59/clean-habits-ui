@@ -17,9 +17,9 @@ const config: Config = {
       },
       colors: {
         // --- PALETTE "CRYPTO DARK" ---
-        // Le fond n'est pas noir pur (#000), mais un Zinc très profond (#09090b)
+        // Le fond n'est pas noir pur (#000), mais un Zinc très profond (#110b1a)
         // pour réduire la fatigue oculaire et faire ressortir les néons.
-        background: "#120c1b", 
+        background: "#110b1a", 
         foreground: "#fbfbfb", // Texte principal (Zinc 50)
         
         // Les surfaces (Cartes, Modales, Sidebars) - légèrement plus claires que le fond
@@ -32,14 +32,12 @@ const config: Config = {
         // Couleur Primaire : Un Violet électrique (Ethereum vibe)
         primary: {
           DEFAULT: "#7c3aed", // Violet 600
-          hover: "#6d28d9",   // Violet 700
-          foreground: "#ffffff",
+          btnhover: "#6d28d9",   // Violet 700
         },
         
         // Couleur Secondaire : Un Fuchsia pour les gradients et notifs
         secondary: {
           DEFAULT: "#c026d3", // Fuchsia 600
-          foreground: "#ffffff",
         },
 
         // Pour les textes grisés / moins importants
