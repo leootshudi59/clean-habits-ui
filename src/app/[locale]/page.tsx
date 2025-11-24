@@ -2,12 +2,19 @@
 
 import { useTranslations } from "next-intl";
 import { useWeb3Auth } from "@/context/Web3AuthContext";
+import { useRouter } from "@/i18n/routing";
 import { Trophy, Wallet, ArrowRight, Activity, Coins, Target } from "lucide-react";
 
 export default function Home() {
   const { login, loggedIn, userInfo } = useWeb3Auth();
+  const router = useRouter();
   const t = useTranslations('Hero'); 
   const tConcept = useTranslations('Concept');
+  
+  // Temporairy function for dev
+  const handleStartDev = () => {
+    router.push('/onboarding');
+  };
 
   return (
     <main className="min-h-screen flex flex-col items-center justify-center relative overflow-hidden selection:bg-primary selection:text-white">
@@ -49,7 +56,8 @@ export default function Home() {
           {!loggedIn ? (
             <div className="flex flex-col items-center gap-4">
               <button
-                onClick={() => login()}
+                // onClick={() => login()}
+                onClick={() => handleStartDev()}
                 className="group relative w-full sm:w-auto bg-primary hover:bg-primary-btnhover text-white px-8 py-4 rounded-xl font-heading font-bold text-lg shadow-neon transition-all hover:scale-105 flex items-center justify-center gap-3"
               >
                 <Wallet size={20} />

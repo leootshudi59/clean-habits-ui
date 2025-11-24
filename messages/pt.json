@@ -29,5 +29,33 @@
     "step3_desc": "No final do desafio, o Smart Contract distribui o pote.",
     "step3_reward1": "Ganhe o pote de quem desistiu",
     "step3_reward2": "NFTs e Troféus On-chain"
+  },
+  "Onboarding": {
+    "next_btn": "Próximo",
+    "skip_btn": "Pular",
+    "finish_btn": "Começar Aventura",
+    "step1_title": "Quem é você?",
+    "step1_desc": "Escolha sua identidade no ChainHabits.",
+    "username_label": "Nome de usuário",
+    "username_placeholder": "Ex: CryptoRunner",
+    "skip_profile_required_username": "O nome de usuário é obrigatório.",
+    "avatar_label": "Foto de perfil (Opcional)",
+    "step2_title": "Seus Objetivos",
+    "step2_desc": "Por que você está se juntando a nós? (Múltipla escolha)",
+    "goal_1": "Largar um mau hábito",
+    "goal_2": "Exercitar-se mais",
+    "goal_3": "Aprender uma habilidade",
+    "goal_4": "Ganhar dinheiro (DeFi)",
+    "goal_5": "Desafiar amigos",
+    "tuto1_title": "Aposte no seu Sucesso",
+    "tuto1_desc": "No ChainHabits, palavras não bastam. Você bloqueia tokens em um Smart Contract para provar sua motivação.",
+    "tuto2_title": "Prove seu Trabalho",
+    "tuto2_desc": "Valide hábitos diariamente manualmente ou conecte Strava, GitHub e Apple Health para validação automática.",
+    "tuto3_title": "Colha Recompensas",
+    "tuto3_desc": "No final, quem cumpriu recupera sua aposta + uma parte do pote de quem desistiu."
+  },
+  "Dashboard": {
+    "welcome": "Bem-vindo ao seu Dashboard",
+    "wip": "Esta é a página inicial pós-registro. Os desafios aparecerão aqui."
   }
 }
