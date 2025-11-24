@@ -147,7 +147,7 @@ export default function OnboardingPage() {
       {/* Header vide ou bouton retour (optionnel) */}
       <div className="w-full h-10"></div>
 
-      {/* DYNAMIC CONTENT CENTER */}
+
       <div className="flex-1 flex flex-col justify-center items-center w-full">
         {currentStep === Step.PROFILE && renderProfile()}
         {currentStep === Step.GOALS && renderGoals()}
