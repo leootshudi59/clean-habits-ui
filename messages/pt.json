@@ -1,0 +1,33 @@
+{
+  "Hero": {
+    "badge": "Ao vivo na Sepolia Testnet",
+    "title_start": "Monitore Hábitos.",
+    "title_end": "Ganhe Cripto.",
+    "subtitle": "Junte-se a desafios em grupo, aposte no seu sucesso e ganhe o pote compartilhado se mantiver seus hábitos.",
+    "connect_btn": "Conectar Carteira",
+    "connect_sub": "Desenvolvido por Web3Auth • Sem taxas de gás",
+    "dashboard_welcome": "Olá, {name}!",
+    "dashboard_status": "Carteira Conectada",
+    "stats_challenges": "Desafios",
+    "stats_score": "Pontuação",
+    "enter_app_btn": "Entrar no App"
+  },
+  "Concept": {
+    "title": "O Conceito",
+    "subtitle": "Comprometa-se. Monitore. Ganhe.",
+    "step1_badge": "Passo 1",
+    "step1_title": "Compromisso Financeiro",
+    "step1_desc": "Entre em um desafio de grupo e bloqueie uma aposta (Stake) em cripto.",
+    "step1_quote": "\"Torne doloroso desistir.\"",
+    "step2_badge": "Passo 2",
+    "step2_title": "Monitoramento Diário",
+    "step2_desc": "Valide seus hábitos todos os dias:",
+    "step2_list1": "Validação manual",
+    "step2_list2": "Sincronização via API (Strava, GitHub...)",
+    "step3_badge": "Passo 3",
+    "step3_title": "Recompensas Web3",
+    "step3_desc": "No final do desafio, o Smart Contract distribui o pote.",
+    "step3_reward1": "Ganhe o pote de quem desistiu",
+    "step3_reward2": "NFTs e Troféus On-chain"
+  }
+}

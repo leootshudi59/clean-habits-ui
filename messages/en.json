@@ -1,0 +1,33 @@
+{
+  "Hero": {
+    "badge": "Live on Sepolia Testnet",
+    "title_start": "Track Habits.",
+    "title_end": "Win Crypto.",
+    "subtitle": "Join group challenges, stake on your success, and win the shared pot if you stick to your habits.",
+    "connect_btn": "Connect Wallet",
+    "connect_sub": "Powered by Web3Auth • No gas fees",
+    "dashboard_welcome": "Hi, {name}!",
+    "dashboard_status": "Wallet Connected",
+    "stats_challenges": "Challenges",
+    "stats_score": "Score",
+    "enter_app_btn": "Enter App"
+  },
+  "Concept": {
+    "title": "The Concept",
+    "subtitle": "Commit. Track. Win.",
+    "step1_badge": "Step 1",
+    "step1_title": "Financial Commitment",
+    "step1_desc": "Join a group challenge and lock a crypto Stake.",
+    "step1_quote": "\"Make it painful to quit.\"",
+    "step2_badge": "Step 2",
+    "step2_title": "Daily Tracking",
+    "step2_desc": "Validate your habits every day:",
+    "step2_list1": "Manual validation",
+    "step2_list2": "API Sync (Strava, GitHub...)",
+    "step3_badge": "Step 3",
+    "step3_title": "Web3 Rewards",
+    "step3_desc": "At the end of the challenge, the Smart Contract distributes the pot.",
+    "step3_reward1": "Win the pot from dropouts",
+    "step3_reward2": "On-chain NFTs & Trophies"
+  }
+}

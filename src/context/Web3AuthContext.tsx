@@ -76,7 +76,7 @@ export const Web3AuthProvider = ({ children }: { children: React.ReactNode }) =>
                     },
                     mfaLevel: MFA_LEVELS.DEFAULT,
                     uiConfig: {
-
+                        
                     }
                 }
 
