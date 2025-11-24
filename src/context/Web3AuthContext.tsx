@@ -68,6 +68,7 @@ export const Web3AuthProvider = ({ children }: { children: React.ReactNode }) =>
                                     },
                                     sms_passwordless: {
                                         showOnModal: false,
+                                        
                                     },
                                 },
                                 showOnModal: true,
@@ -76,7 +77,7 @@ export const Web3AuthProvider = ({ children }: { children: React.ReactNode }) =>
                     },
                     mfaLevel: MFA_LEVELS.DEFAULT,
                     uiConfig: {
-                        
+                        loginMethodsOrder: ["google", "facebook", "apple", "twitter", "discord"],
                     }
                 }
 
