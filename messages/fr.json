@@ -4,7 +4,7 @@
     "title_start": "Suis tes habitudes.",
     "title_end": "Gagne de la Crypto.",
     "subtitle": "Rejoins des challenges de groupe, mise sur ta réussite et gagne le pot commun si tu tiens tes habitudes.",
-    "connect_btn": "Connecter mon Wallet",
+    "connect_btn": "Se connecter / S'inscrire",
     "connect_sub": "Propulsé par Web3Auth • Sans frais de gas",
     "dashboard_welcome": "Salut, {name} !",
     "dashboard_status": "Wallet Connecté",
@@ -29,5 +29,33 @@
     "step3_desc": "À la fin du challenge, le Smart Contract distribue le pot.",
     "step3_reward1": "Gagnez le pot des abandons",
     "step3_reward2": "NFTs & Trophées On-chain"
+  },
+  "Onboarding": {
+    "next_btn": "Suivant",
+    "skip_btn": "Passer",
+    "finish_btn": "Commencer l'aventure",
+    "step1_title": "Qui es-tu ?",
+    "step1_desc": "Choisis ton identité sur ChainHabits.",
+    "username_label": "Ton pseudo",
+    "username_placeholder": "Ex: CryptoRunner",
+    "skip_profile_required_username": "Le pseudo est obligatoire.",
+    "avatar_label": "Photo de profil (Optionnel)",
+    "step2_title": "Tes Objectifs",
+    "step2_desc": "Pourquoi nous rejoins-tu ? (Sélection multiple)",
+    "goal_1": "Arrêter une mauvaise habitude",
+    "goal_2": "Faire plus de sport",
+    "goal_3": "Apprendre une compétence",
+    "goal_4": "Gagner de l'argent (DeFi)",
+    "goal_5": "Défier mes amis",
+    "tuto1_title": "Mise ta réussite",
+    "tuto1_desc": "Sur ChainHabits, ta parole ne suffit pas. Tu verrouilles des tokens dans un Smart Contract pour prouver ta motivation.",
+    "tuto2_title": "Prouve tes efforts",
+    "tuto2_desc": "Chaque jour, valide tes habitudes manuellement ou connecte Strava, GitHub et Apple Health pour une validation automatique.",
+    "tuto3_title": "Récolte les gains",
+    "tuto3_desc": "À la fin, ceux qui ont tenu récupèrent leur mise + une part du pot de ceux qui ont abandonné."
+  },
+  "Dashboard": {
+    "welcome": "Bienvenue sur ton Dashboard",
+    "wip": "Ceci est la page d'accueil post-inscription. Les challenges apparaîtront ici."
   }
 }

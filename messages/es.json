@@ -4,12 +4,12 @@
     "title_start": "Sigue tus hábitos.",
     "title_end": "Gana Cripto.",
     "subtitle": "Únete a desafíos grupales, apuesta por tu éxito y gana el bote compartido si mantienes tus hábitos.",
-    "connect_btn": "Conectar Wallet",
+    "connect_btn": "Conectarse / Registrarse",
     "connect_sub": "Impulsado por Web3Auth • Sin gas fees",
     "dashboard_welcome": "Hola, {name}!",
     "dashboard_status": "Wallet Conectada",
     "stats_challenges": "Desafíos",
-    "stats_score": "Puntuación",
+    "stats_score": "Puntuación", 
     "enter_app_btn": "Entrar a la App"
   },
   "Concept": {
@@ -29,5 +29,33 @@
     "step3_desc": "Al final del desafío, el Smart Contract distribuye el bote.",
     "step3_reward1": "Gana el bote de los que abandonan",
     "step3_reward2": "NFTs y Trofeos On-chain"
+  },
+  "Onboarding": {
+    "next_btn": "Siguiente",
+    "skip_btn": "Saltar",
+    "finish_btn": "Comenzar Aventura",
+    "step1_title": "¿Quién eres?",
+    "step1_desc": "Elige tu identidad en ChainHabits.",
+    "username_label": "Nombre de usuario",
+    "username_placeholder": "Ej: CryptoRunner",
+    "skip_profile_required_username": "El nombre de usuario es obligatorio.",
+    "avatar_label": "Foto de perfil (Opcional)",
+    "step2_title": "Tus Objetivos",
+    "step2_desc": "¿Por qué te unes a nosotros? (Selección múltiple)",
+    "goal_1": "Dejar un mal hábito",
+    "goal_2": "Hacer más ejercicio",
+    "goal_3": "Aprender una habilidad",
+    "goal_4": "Ganar dinero (DeFi)",
+    "goal_5": "Desafiar a amigos",
+    "tuto1_title": "Apuesta por tu Éxito",
+    "tuto1_desc": "En ChainHabits, las palabras no bastan. Bloqueas tokens en un Smart Contract para demostrar tu motivación.",
+    "tuto2_title": "Demuestra tu Trabajo",
+    "tuto2_desc": "Valida hábitos diariamente de forma manual o conecta Strava, GitHub y Apple Health para validación automática.",
+    "tuto3_title": "Cosecha Recompensas",
+    "tuto3_desc": "Al final, quienes cumplieron recuperan su apuesta + una parte del bote de quienes abandonaron."
+  },
+  "Dashboard": {
+    "welcome": "Bienvenido a tu Dashboard",
+    "wip": "Esta es la página de inicio post-registro. Los desafíos aparecerán aquí."
   }
 }

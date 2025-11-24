@@ -4,7 +4,7 @@
     "title_start": "Track Habits.",
     "title_end": "Win Crypto.",
     "subtitle": "Join group challenges, stake on your success, and win the shared pot if you stick to your habits.",
-    "connect_btn": "Connect Wallet",
+    "connect_btn": "Sign in / Sign up",
     "connect_sub": "Powered by Web3Auth • No gas fees",
     "dashboard_welcome": "Hi, {name}!",
     "dashboard_status": "Wallet Connected",
@@ -29,5 +29,33 @@
     "step3_desc": "At the end of the challenge, the Smart Contract distributes the pot.",
     "step3_reward1": "Win the pot from dropouts",
     "step3_reward2": "On-chain NFTs & Trophies"
+  },
+  "Onboarding": {
+    "next_btn": "Next",
+    "skip_btn": "Skip",
+    "finish_btn": "Start Adventure",
+    "step1_title": "Who are you?",
+    "step1_desc": "Choose your identity on ChainHabits.",
+    "username_label": "Username",
+    "username_placeholder": "Ex: CryptoRunner",
+    "skip_profile_required_username": "Username is required.",
+    "avatar_label": "Profile Picture (Optional)",
+    "step2_title": "Your Goals",
+    "step2_desc": "Why are you joining us? (Multi-select)",
+    "goal_1": "Quit a bad habit",
+    "goal_2": "Exercise more",
+    "goal_3": "Learn a skill",
+    "goal_4": "Earn money (DeFi)",
+    "goal_5": "Challenge friends",
+    "tuto1_title": "Stake your Success",
+    "tuto1_desc": "On ChainHabits, words aren't enough. You lock tokens in a Smart Contract to prove your motivation.",
+    "tuto2_title": "Prove your Work",
+    "tuto2_desc": "Validate habits daily manually or connect Strava, GitHub, and Apple Health for auto-validation.",
+    "tuto3_title": "Harvest Rewards",
+    "tuto3_desc": "In the end, those who stuck to it recover their stake + a share of the pot from those who quit."
+  },
+  "Dashboard": {
+    "welcome": "Welcome to your Dashboard",
+    "wip": "This is the post-registration homepage. Challenges will appear here."
   }
 }
