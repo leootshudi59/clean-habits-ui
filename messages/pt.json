@@ -59,5 +59,19 @@
   "Dashboard": {
     "welcome": "Bem-vindo ao seu Dashboard",
     "wip": "Esta é a página inicial pós-registro. Os desafios aparecerão aqui."
+  },
+  "Navigation": {
+    "home": "Hoje",
+    "challenges": "Desafios",
+    "social": "Social",
+    "profile": "Perfil"
+  },
+  "Pages": {
+    "challenges_title": "Desafios",
+    "challenges_desc": "Gerencie seus compromissos e descubra novos hábitos.",
+    "social_title": "Social e Ranking",
+    "social_desc": "Acompanhe a atividade dos amigos e veja quem está ganhando mais.",
+    "profile_title": "Meu Perfil",
+    "profile_desc": "Suas estatísticas, troféus e configurações."
   }
 }

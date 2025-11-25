@@ -59,5 +59,19 @@
   "Dashboard": {
     "welcome": "Welcome to your Dashboard",
     "wip": "This is the post-registration homepage. Challenges will appear here."
+  },
+  "Navigation": {
+    "home": "Today",
+    "challenges": "Challenges",
+    "social": "Social",
+    "profile": "Profile"
+  },
+  "Pages": {
+    "challenges_title": "Challenges",
+    "challenges_desc": "Manage your commitments and discover new habits.",
+    "social_title": "Social & Leaderboard",
+    "social_desc": "Follow friends' activity and see who's earning the most.",
+    "profile_title": "My Profile",
+    "profile_desc": "Your stats, trophies, and settings."
   }
 }

@@ -1,9 +1,9 @@
 "use client";
 
 import { useLocale } from "next-intl";
-import { useRouter, usePathname } from "@/i18n/routing";
 import { useState, useTransition, useRef, useEffect } from "react";
-import { ChevronDown, Globe } from "lucide-react";
+import { useRouter, usePathname } from "@/i18n/routing";
+import { ChevronDown } from "lucide-react";
 
 export default function LanguageSwitcher() {
   const locale = useLocale();
@@ -13,7 +13,6 @@ export default function LanguageSwitcher() {
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
 
-  // Les langues disponibles
   const languages = [
     { code: "en", label: "EN", flag: "🇬🇧" },
     { code: "fr", label: "FR", flag: "🇫🇷" },
