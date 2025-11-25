@@ -6,8 +6,7 @@ export default function DashboardPage() {
   const t = useTranslations('Dashboard');
 
   return (
-    <main className="min-h-screen flex flex-col items-center justify-center p-4 bg-background relative overflow-hidden">
-        {/* Un petit fond pour ne pas que ce soit triste */}
+    <div className="min-h-screen flex flex-col items-center justify-center p-4 bg-background relative overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary/10 via-background to-background -z-10" />
 
         <div className="glass p-8 rounded-2xl border border-white/10 text-center max-w-md w-full shadow-neon">
@@ -21,6 +20,6 @@ export default function DashboardPage() {
                 {t('wip')}
             </p>
         </div>
-    </main>
+    </div>
   );
 }

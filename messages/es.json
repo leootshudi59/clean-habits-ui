@@ -50,12 +50,28 @@
     "tuto1_title": "Apuesta por tu Éxito",
     "tuto1_desc": "En ChainHabits, las palabras no bastan. Bloqueas tokens en un Smart Contract para demostrar tu motivación.",
     "tuto2_title": "Demuestra tu Trabajo",
-    "tuto2_desc": "Valida hábitos diariamente de forma manual o conecta Strava, GitHub y Apple Health para validación automática.",
-    "tuto3_title": "Cosecha Recompensas",
-    "tuto3_desc": "Al final, quienes cumplieron recuperan su apuesta + una parte del bote de quienes abandonaron."
+    "tuto2_desc": "Valida hábitos manualmente o conecta Strava, GitHub y Apple Health para validación automática.",
+    "tuto3_title": "Gana el Bote",
+    "tuto3_desc": "La distribución es simple: los mejores se reparten las apuestas de quienes abandonaron.",
+    "tuto4_title": "Colecciona Trofeos",
+    "tuto4_desc": "Desbloquea NFTs raros e insignias on-chain para demostrar tus rachas y logros a largo plazo."
   },
   "Dashboard": {
     "welcome": "Bienvenido a tu Dashboard",
     "wip": "Esta es la página de inicio post-registro. Los desafíos aparecerán aquí."
+  },
+  "Navigation": {
+    "home": "Hoy",
+    "challenges": "Desafíos",
+    "social": "Social",
+    "profile": "Perfil"
+  },
+  "Pages": {
+    "challenges_title": "Desafíos",
+    "challenges_desc": "Gestiona tus compromisos y descubre nuevos hábitos.",
+    "social_title": "Social y Ranking",
+    "social_desc": "Sigue la actividad de tus amigos y mira quién está ganando más.",
+    "profile_title": "Mi Perfil",
+    "profile_desc": "Tus estadísticas, trofeos y configuración."
   }
 }

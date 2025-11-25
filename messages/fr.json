@@ -50,12 +50,28 @@
     "tuto1_title": "Mise ta réussite",
     "tuto1_desc": "Sur ChainHabits, ta parole ne suffit pas. Tu verrouilles des tokens dans un Smart Contract pour prouver ta motivation.",
     "tuto2_title": "Prouve tes efforts",
-    "tuto2_desc": "Chaque jour, valide tes habitudes manuellement ou connecte Strava, GitHub et Apple Health pour une validation automatique.",
-    "tuto3_title": "Récolte les gains",
-    "tuto3_desc": "À la fin, ceux qui ont tenu récupèrent leur mise + une part du pot de ceux qui ont abandonné."
+    "tuto2_desc": "Valide tes habitudes manuellement ou connecte Strava, GitHub et Apple Health pour une validation automatique.",
+    "tuto3_title": "Gagne le Pot",
+    "tuto3_desc": "La distribution est simple : les plus performants se partagent les mises de ceux qui ont abandonné.",
+    "tuto4_title": "Collectionne les Trophées",
+    "tuto4_desc": "Débloque des NFTs rares et des badges on-chain pour prouver tes streaks et tes exploits à long terme."
   },
   "Dashboard": {
     "welcome": "Bienvenue sur ton Dashboard",
     "wip": "Ceci est la page d'accueil post-inscription. Les challenges apparaîtront ici."
+  },
+  "Navigation": {
+    "home": "Aujourd'hui",
+    "challenges": "Challenges",
+    "social": "Social",
+    "profile": "Profil"
+  },
+  "Pages": {
+    "challenges_title": "Challenges",
+    "challenges_desc": "Gère tes engagements et découvre de nouveaux défis.",
+    "social_title": "Social & Classement",
+    "social_desc": "Suis l'activité de tes amis et vois qui gagne le plus.",
+    "profile_title": "Mon Profil",
+    "profile_desc": "Tes statistiques, tes trophées et tes paramètres."
   }
 }

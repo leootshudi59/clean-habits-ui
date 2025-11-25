@@ -15,7 +15,7 @@ ChainHabits is a **habit tracking** and **social challenge** platform where user
   - a smart contract distributes the pot based on those scores,
   - you can claim your rewards on-chain.
 
-Under the hood, the common pot is redistributed pro-rata of how well you stick to your routines, with a few performance tiers. If everyone completes more than a certain high threshold of their target points (for example >90%), then everyone simply gets back their full stake plus a shared bonus at the end of the challenge. Otherwise, users above a “strong performance” threshold (e.g. >85% of points) are guaranteed to get back their stake with a bonus, and that bonus pool is split between them pro-rata to their completion percentage. This bonus pool comes from the penalties of users who don’t reach the minimum bar (e.g. <80%): for each missing percentage point below that bar, they lose a small fraction of their initial stake (for example 0.5% of their stake per 1% of missing points) in their final payout. On top of that, users in the top tier (e.g. >95%) can earn extra non-monetary rewards from the app itself, such as rare trophies or “skip habit” tokens (see later). All thresholds and percentages are configurable and can be tuned per challenge.
+Under the hood, the common pot is redistributed **pro-rata to your performance**, with a few configurable tiers. If everyone hits a high target (e.g. >90% of their points), then everyone simply gets back their full stake **plus a shared bonus**. Otherwise, users above a strong threshold (e.g. >85%) are guaranteed to recover their stake with a bonus, **funded by penalties from low performers** (e.g. <80%), who lose a small fraction of their stake for each missing percentage point (for example 0.5% per 1% of points not achieved). Top-tier users (e.g. >95%) can also receive extra non-monetary rewards like rare trophies or “skip habit” tokens. All thresholds and percentages are configurable per challenge.s
 
 This repository focuses on the **web frontend**, built with **Next.js** in a **mobile-first** approach, and designed to plug into:
 
@@ -204,7 +204,13 @@ So limits, transparency, and a clear health/progression angle are integral to th
 
 ## 💻 Frontend – Web App (Next.js)
 
-This repo contains the **web frontend of ChainHabits**, built to be:
+This repository focuses on the **web frontend** of ChainHabits: a **Next.js** (App Router) app, built **mobile-first** and designed to plug into:
+
+- a **smart contract backend** (on-chain, source of truth for money, stakes and rewards),
+- a **lightweight NestJS API** (off-chain orchestration, scoring, integrations, caching),
+- a **NoSQL database** (MongoDB / Firestore for logs, configs, and metadata).
+
+It is built to be:
 
 - **Mobile-first**: layouts and navigation optimised for small screens first.
 - **Web3-oriented**: wallet-based identity, crypto/finance visual codes.

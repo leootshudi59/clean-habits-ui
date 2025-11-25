@@ -48,14 +48,30 @@
     "goal_4": "Ganhar dinheiro (DeFi)",
     "goal_5": "Desafiar amigos",
     "tuto1_title": "Aposte no seu Sucesso",
-    "tuto1_desc": "No ChainHabits, palavras não bastam. Você bloqueia tokens em um Smart Contract para provar sua motivação.",
+    "tuto1_desc": "No ChainHabits, palavras não bastam. Você bloqueia tokens num Smart Contract para provar sua motivação.",
     "tuto2_title": "Prove seu Trabalho",
-    "tuto2_desc": "Valide hábitos diariamente manualmente ou conecte Strava, GitHub e Apple Health para validação automática.",
-    "tuto3_title": "Colha Recompensas",
-    "tuto3_desc": "No final, quem cumpriu recupera sua aposta + uma parte do pote de quem desistiu."
+    "tuto2_desc": "Valide hábitos manualmente ou conecte Strava, GitHub e Apple Health para validação automática.",
+    "tuto3_title": "Ganhe o Pote",
+    "tuto3_desc": "A distribuição é simples: os melhores desempenhos dividem as apostas de quem desistiu.",
+    "tuto4_title": "Colecione Troféus",
+    "tuto4_desc": "Desbloqueie NFTs raros e emblemas on-chain para provar suas sequências e conquistas de longo prazo."
   },
   "Dashboard": {
     "welcome": "Bem-vindo ao seu Dashboard",
     "wip": "Esta é a página inicial pós-registro. Os desafios aparecerão aqui."
+  },
+  "Navigation": {
+    "home": "Hoje",
+    "challenges": "Desafios",
+    "social": "Social",
+    "profile": "Perfil"
+  },
+  "Pages": {
+    "challenges_title": "Desafios",
+    "challenges_desc": "Gerencie seus compromissos e descubra novos hábitos.",
+    "social_title": "Social e Ranking",
+    "social_desc": "Acompanhe a atividade dos amigos e veja quem está ganhando mais.",
+    "profile_title": "Meu Perfil",
+    "profile_desc": "Suas estatísticas, troféus e configurações."
   }
 }

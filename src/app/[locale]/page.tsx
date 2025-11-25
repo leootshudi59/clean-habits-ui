@@ -35,7 +35,7 @@ export default function Home() {
         {/* 1. SECTION HERO (The Title "Home Page") */}
         <div className="text-center max-w-3xl">
           {/* Small badge above the title */}
-          <div className="inline-flex items-center gap-2 mt-1 md:mt-2 px-3 py-1 rounded-full bg-zinc-800/50 border border-white/10 text-xs font-medium text-primary mb-16 md:mb-24 animate-fade-in">
+          <div className="inline-flex items-center gap-2 mt-1 md:mt-2 px-2 md:px-3 py-1 rounded-full bg-zinc-800/50 border border-white/10 text-xxs md:text-xs font-medium text-primary mb-16 md:mb-24 animate-fade-in">
             <span className="relative flex h-2 w-2">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>

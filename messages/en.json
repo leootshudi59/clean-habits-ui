@@ -50,12 +50,28 @@
     "tuto1_title": "Stake your Success",
     "tuto1_desc": "On ChainHabits, words aren't enough. You lock tokens in a Smart Contract to prove your motivation.",
     "tuto2_title": "Prove your Work",
-    "tuto2_desc": "Validate habits daily manually or connect Strava, GitHub, and Apple Health for auto-validation.",
-    "tuto3_title": "Harvest Rewards",
-    "tuto3_desc": "In the end, those who stuck to it recover their stake + a share of the pot from those who quit."
+    "tuto2_desc": "Validate habits manually or connect Strava, GitHub, and Apple Health for auto-validation.",
+    "tuto3_title": "Win the Pot",
+    "tuto3_desc": "Distribution is simple: top performers share the stakes of those who gave up.",
+    "tuto4_title": "Collect Trophies",
+    "tuto4_desc": "Unlock rare NFTs and on-chain badges to prove your streaks and long-term achievements."
   },
   "Dashboard": {
     "welcome": "Welcome to your Dashboard",
     "wip": "This is the post-registration homepage. Challenges will appear here."
+  },
+  "Navigation": {
+    "home": "Today",
+    "challenges": "Challenges",
+    "social": "Social",
+    "profile": "Profile"
+  },
+  "Pages": {
+    "challenges_title": "Challenges",
+    "challenges_desc": "Manage your commitments and discover new habits.",
+    "social_title": "Social & Leaderboard",
+    "social_desc": "Follow friends' activity and see who's earning the most.",
+    "profile_title": "My Profile",
+    "profile_desc": "Your stats, trophies, and settings."
   }
 }
