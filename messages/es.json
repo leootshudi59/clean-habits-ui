@@ -57,8 +57,16 @@
     "tuto4_desc": "Desbloquea NFTs raros e insignias on-chain para demostrar tus rachas y logros a largo plazo."
   },
   "Dashboard": {
-    "welcome": "Bienvenido a tu Dashboard",
-    "wip": "Esta es la página de inicio post-registro. Los desafíos aparecerán aquí."
+    "title": "Hoy",
+    "subtitle": "Martes, 24 Oct",
+    "score_label": "Puntos diarios",
+    "score_desc": "Puntuación agregada de tus <bold>{count} desafíos activos</bold>.",
+    "streak_label": "Racha actual",
+    "habit_daily_done": "Hecho",
+    "habit_weekly_progress": "{current} / {target} esta semana",
+    "difficulty_easy": "Fácil",
+    "difficulty_medium": "Medio",
+    "difficulty_hard": "Difícil"
   },
   "Navigation": {
     "home": "Hoy",
@@ -73,5 +81,19 @@
     "social_desc": "Sigue la actividad de tus amigos y mira quién está ganando más.",
     "profile_title": "Mi Perfil",
     "profile_desc": "Tus estadísticas, trofeos y configuración."
+  },
+  "Profile": {
+    "level": "Nivel {lvl}",
+    "xp_next": "{current} / {max} XP",
+    "total_earnings": "Ganancias Totales",
+    "withdraw_btn": "Gestionar / Retirar",
+    "stat_streak": "Mejor Racha",
+    "stat_challenges": "Desafíos",
+    "stat_rate": "Tasa de Éxito",
+    "trophies_title": "Trofeos e Insignias",
+    "menu_integrations": "Integraciones (Strava, etc.)",
+    "menu_settings": "Configuración",
+    "menu_help": "Ayuda y Soporte",
+    "logout": "Cerrar Sesión"
   }
 }

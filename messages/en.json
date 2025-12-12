@@ -57,8 +57,16 @@
     "tuto4_desc": "Unlock rare NFTs and on-chain badges to prove your streaks and long-term achievements."
   },
   "Dashboard": {
-    "welcome": "Welcome to your Dashboard",
-    "wip": "This is the post-registration homepage. Challenges will appear here."
+    "title": "Today",
+    "subtitle": "Tuesday, Oct 24",
+    "score_label": "Daily Points",
+    "score_desc": "Aggregated score from your <bold>{count} active challenges</bold>.",
+    "streak_label": "Current Streak",
+    "habit_daily_done": "Done",
+    "habit_weekly_progress": "{current} / {target} this week",
+    "difficulty_easy": "Easy",
+    "difficulty_medium": "Medium",
+    "difficulty_hard": "Hard"
   },
   "Navigation": {
     "home": "Today",
@@ -73,5 +81,19 @@
     "social_desc": "Follow friends' activity and see who's earning the most.",
     "profile_title": "My Profile",
     "profile_desc": "Your stats, trophies, and settings."
+  },
+  "Profile": {
+    "level": "Level {lvl}",
+    "xp_next": "{current} / {max} XP",
+    "total_earnings": "Total Earnings",
+    "withdraw_btn": "Manage / Withdraw",
+    "stat_streak": "Best Streak",
+    "stat_challenges": "Challenges",
+    "stat_rate": "Success Rate",
+    "trophies_title": "Trophies & Badges",
+    "menu_integrations": "Integrations (Strava, etc.)",
+    "menu_settings": "Settings",
+    "menu_help": "Help & Support",
+    "logout": "Log Out"
   }
 }
