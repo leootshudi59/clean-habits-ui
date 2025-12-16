@@ -95,5 +95,23 @@
     "menu_settings": "Configurações",
     "menu_help": "Ajuda e Suporte",
     "logout": "Sair"
+  },
+  "Challenges": {
+    "tab_mine": "Meus Desafios",
+    "tab_explore": "Explorar",
+    "section_active": "Ativos",
+    "section_finished": "Terminados",
+    "days_left": "{count}d restantes",
+    "participants": "{count} participantes",
+    "pot_total": "Pote",
+    "your_stake": "Sua Aposta",
+    "min_stake": "Min. aposta de Entrada",
+    "tier_label": "Desempenho",
+    "btn_details": "Gerenciar",
+    "btn_join": "Entrar",
+    "search_placeholder": "Buscar um desafio...",
+    "featured_badge": "Destaque",
+    "create_btn": "Criar",
+    "featured_desc": "O desafio supremo. 60 dias. Aposta de $1000. Apenas 1% sobreviverá."
   }
 }

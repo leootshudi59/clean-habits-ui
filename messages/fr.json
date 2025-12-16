@@ -95,5 +95,23 @@
     "menu_settings": "Paramètres",
     "menu_help": "Aide & Support",
     "logout": "Déconnexion"
+  },
+  "Challenges": {
+    "tab_mine": "Mes Challenges",
+    "tab_explore": "Explorer",
+    "section_active": "Actifs",
+    "section_finished": "Terminés",
+    "days_left": "{count}j restants",
+    "participants": "{count} participants",
+    "pot_total": "Cagnotte",
+    "your_stake": "Ta Mise",
+    "min_stake": "Mise d'entrée min.",
+    "tier_label": "Performance",
+    "btn_details": "Gérer",
+    "btn_join": "Rejoindre",
+    "search_placeholder": "Trouver un challenge...",
+    "featured_badge": "À la une",
+    "create_btn": "Créer",
+    "featured_desc": "Le challenge ultime. 60 jours. 1000$ de mise. Seuls les 1% survivront."
   }
 }

@@ -17,7 +17,7 @@ export default function ProfilePage() {
     xpMax: 1000,
     earnings: 1250.50,
     bestStreak: 24,
-    challengesWon: 3,
+    challengesWon: 4,
     completionRate: 92
   };
 

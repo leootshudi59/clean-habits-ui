@@ -95,5 +95,23 @@
     "menu_settings": "Configuración",
     "menu_help": "Ayuda y Soporte",
     "logout": "Cerrar Sesión"
+  },
+  "Challenges": {
+    "tab_mine": "Mis Desafíos",
+    "tab_explore": "Explorar",
+    "section_active": "Activos",
+    "section_finished": "Terminados",
+    "days_left": "{count}d restantes",
+    "participants": "{count} participantes",
+    "pot_total": "Bote",
+    "your_stake": "Tu Apuesta",
+    "min_stake": "Apuesta min. de Entrada",
+    "tier_label": "Rendimiento",
+    "btn_details": "Gestionar",
+    "btn_join": "Unirse",
+    "search_placeholder": "Buscar un desafío...",
+    "featured_badge": "Destacado",
+    "create_btn": "Crear",
+    "featured_desc": "El desafío definitivo. 60 días. Apuesta de $1000. Solo el 1% sobrevivirá."
   }
 }

@@ -95,5 +95,23 @@
     "menu_settings": "Settings",
     "menu_help": "Help & Support",
     "logout": "Log Out"
+  },
+  "Challenges": {
+    "tab_mine": "My Challenges",
+    "tab_explore": "Explore",
+    "section_active": "Active",
+    "section_finished": "Finished",
+    "days_left": "{count}d left",
+    "participants": "{count} participants",
+    "pot_total": "Prize Pool",
+    "your_stake": "Your Stake",
+    "min_stake": "Min. entry stake",
+    "tier_label": "Performance",
+    "btn_details": "Manage",
+    "btn_join": "Join",
+    "search_placeholder": "Find a challenge...",
+    "featured_badge": "Featured",
+    "create_btn": "Create",
+    "featured_desc": "The ultimate challenge. 60 days. $1000 stake. Only the 1% will survive."
   }
 }
