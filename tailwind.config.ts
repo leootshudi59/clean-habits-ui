@@ -7,6 +7,7 @@ const config: Config = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/lib/**/*.{js,ts,jsx,tsx,mdx}", // Important si tu mets des classes dans tes constantes
+    "./src/**/*.{js,ts,jsx,tsx,mdx}"
   ],
   darkMode: "class", // Permet de forcer le mode sombre via une classe parent
   theme: {
@@ -14,6 +15,9 @@ const config: Config = {
       fontFamily: {
         // Utilise la police par défaut de Next.js (souvent Inter)
         sans: ["var(--font-inter)", ...defaultTheme.fontFamily.sans],
+      },
+      fontSize: {
+        xxs: "0.5rem",
       },
       colors: {
         // --- PALETTE "CRYPTO DARK" ---

@@ -5,13 +5,13 @@ import { useRouter } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
 import { ArrowRight, User, Check, Target, Trophy, ShieldCheck, Coins, Activity } from "lucide-react";
 
-// Définition des étapes
 enum Step {
   PROFILE = 0,
   GOALS = 1,
   TUTO_1 = 2,
   TUTO_2 = 3,
   TUTO_3 = 4,
+  TUTO_4 = 5,
 }
 
 export default function OnboardingPage() {
@@ -25,7 +25,7 @@ export default function OnboardingPage() {
   
   // Navigation
   const nextStep = () => {
-    if (currentStep === Step.TUTO_3) {
+    if (currentStep === Step.TUTO_4) {
       router.push('/dashboard');
     } else {
       setCurrentStep((prev) => prev + 1);
@@ -120,13 +120,13 @@ export default function OnboardingPage() {
 
   // 3. TUTORIEL (Générique)
   const renderTutorial = (stepIndex: number, icon: React.ReactNode, titleKey: string, descKey: string) => (
-    <div className="w-full max-w-md text-center space-y-8 animate-slide-up">
+    <div className="w-full max-w-md text-center space-y-6 md:space-y-8 animate-slide-up">
         <div className="h-40 w-40 mx-auto rounded-full bg-gradient-to-tr from-zinc-800 to-black border border-white/10 flex items-center justify-center shadow-neon mb-8">
             {icon}
         </div>
         <div className="space-y-4">
             <div className="inline-block px-3 py-1 rounded-full bg-zinc-800 text-xs text-zinc-400 font-mono mb-2">
-                {stepIndex} / 3
+                {stepIndex} / 4
             </div>
             <h1 className="text-3xl md:text-4xl font-heading font-bold text-white">{t(titleKey)}</h1>
             <p className="text-lg text-muted-foreground leading-relaxed">{t(descKey)}</p>
@@ -140,7 +140,7 @@ export default function OnboardingPage() {
       <div className="absolute top-0 left-0 w-full h-1 bg-zinc-900">
         <div 
             className="h-full bg-primary transition-all duration-500 ease-out" 
-            style={{ width: `${((currentStep + 1) / 5) * 100}%` }} 
+            style={{ width: `${((currentStep + 1) / 6) * 100}%` }} 
         />
       </div>
 
@@ -151,10 +151,14 @@ export default function OnboardingPage() {
       <div className="flex-1 flex flex-col justify-center items-center w-full">
         {currentStep === Step.PROFILE && renderProfile()}
         {currentStep === Step.GOALS && renderGoals()}
-        {currentStep === Step.TUTO_1 && renderTutorial(1, <ShieldCheck size={64} className="text-rose-400" />, 'tuto1_title', 'tuto1_desc')}
-        {currentStep === Step.TUTO_2 && renderTutorial(2, <Activity size={64} className="text-cyan-400" />, 'tuto2_title', 'tuto2_desc')}
-        {currentStep === Step.TUTO_3 && renderTutorial(3, <Coins size={64} className="text-purple-400" />, 'tuto3_title', 'tuto3_desc')}
-      </div>
+        {/* Step 1: Stake */}
+        {currentStep === Step.TUTO_1 && renderTutorial(1, <ShieldCheck size={56} className="text-rose-400" />, 'tuto1_title', 'tuto1_desc')}
+        {/* Step 2: Track */}
+        {currentStep === Step.TUTO_2 && renderTutorial(2, <Activity size={56} className="text-cyan-400" />, 'tuto2_title', 'tuto2_desc')}
+        {/* Step 3: Pot (Money) */}
+        {currentStep === Step.TUTO_3 && renderTutorial(3, <Coins size={56} className="text-yellow-400" />, 'tuto3_title', 'tuto3_desc')}
+        {/* Step 4: NFTs (Trophy) */}
+        {currentStep === Step.TUTO_4 && renderTutorial(4, <Trophy size={56} className="text-purple-400" />, 'tuto4_title', 'tuto4_desc')}      </div>
 
       {/* FOOTER ACTIONS */}
       <div className="w-full max-w-md space-y-4 mt-16 md:mt-24">
