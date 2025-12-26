@@ -164,5 +164,25 @@
     "menu_notifications": "Notificações e Lembretes",
     "menu_language": "Idioma",
     "menu_account": "Conta e Segurança"
+  },
+  "ChallengeDetail": {
+    "title": "Detalhes do Desafio",
+    "back_btn": "Voltar",
+    "status_open": "Aberto",
+    "participants": "{count} Habitants",
+    "pot_total": "Prêmio Total",
+    "entry_stake": "Aposta de Entrada",
+    "rules_title": "Regras do Smart Contract",
+    "rule_duration": "Duração: {days} dias",
+    "rule_frequency": "Frequência: {freq}",
+    "rule_threshold": "Limite mín.: {percent}%",
+    "distribution_title": "Distribuição do Prêmio",
+    "dist_winners": "Vencedores (>80%)",
+    "dist_savers": "Salvos (70-80%)",
+    "dist_losers": "Perdedores (<70%)",
+    "social_title": "Participantes",
+    "social_view_all": "Ver tudo",
+    "btn_stake": "Apostar {amount} & Entrar",
+    "wallet_balance": "Saldo: {amount}"
   }
 }
