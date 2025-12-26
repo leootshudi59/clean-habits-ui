@@ -164,5 +164,25 @@
     "menu_notifications": "Notificaciones y Recordatorios",
     "menu_language": "Idioma",
     "menu_account": "Cuenta y Seguridad"
+  },
+  "ChallengeDetail": {
+    "title": "Detalles del Desafío",
+    "back_btn": "Volver",
+    "status_open": "Abierto",
+    "participants": "{count} Habitants",
+    "pot_total": "Bote Total",
+    "entry_stake": "Apuesta de Entrada",
+    "rules_title": "Reglas del Smart Contract",
+    "rule_duration": "Duración: {days} días",
+    "rule_frequency": "Frecuencia: {freq}",
+    "rule_threshold": "Umbral mín.: {percent}%",
+    "distribution_title": "Distribución del Bote",
+    "dist_winners": "Ganadores (>80%)",
+    "dist_savers": "Salvados (70-80%)",
+    "dist_losers": "Perdedores (<70%)",
+    "social_title": "Participantes",
+    "social_view_all": "Ver todos",
+    "btn_stake": "Apostar {amount} y Unirse",
+    "wallet_balance": "Saldo: {amount}"
   }
 }

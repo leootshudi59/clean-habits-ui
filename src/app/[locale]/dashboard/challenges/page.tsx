@@ -2,12 +2,14 @@
 
 import { useState } from "react";
 import { useTranslations } from "next-intl";
+import { useRouter } from "@/i18n/routing";
 import { Search, Trophy, Users, Timer, TrendingUp, Plus, ArrowRight, ShieldCheck, Flame, Lock } from "lucide-react";
 
 type Tab = 'mine' | 'explore';
 
 export default function ChallengesPage() {
   const t = useTranslations('Challenges');
+  const router = useRouter();
   const [activeTab, setActiveTab] = useState<Tab>('mine');
 
   // --- MOCK DATA : MES CHALLENGES ---
@@ -20,7 +22,7 @@ export default function ChallengesPage() {
       stake: 50,
       pot: 5420,
       participants: 145,
-      performance: "Tier A (Top 10%)",
+      performance: "Tier A (Top 20%)",
       perfColor: "text-green-400",
       image: "from-violet-600/20 to-indigo-900/40",
       icon: <TrendingUp size={24} className="text-violet-400" />
@@ -80,6 +82,10 @@ export default function ChallengesPage() {
     }
   ];
 
+  const goToDetail = (id: number) => {
+    router.push(`/dashboard/challenges/${id}`);
+  };
+
   return (
     <div className="pb-24 space-y-6">
       
@@ -124,7 +130,7 @@ export default function ChallengesPage() {
              </div>
 
              {myChallenges.map((challenge) => (
-                 <div key={challenge.id} className="relative overflow-hidden rounded-2xl border border-white/10 group">
+                 <div key={challenge.id} onClick={() => goToDetail(challenge.id)} className="relative overflow-hidden rounded-2xl border border-white/10 group">
                     <div className={`absolute inset-0 bg-gradient-to-br ${challenge.image} opacity-50`} />
                     
                     <div className="relative z-10 p-5 space-y-4">
@@ -201,7 +207,7 @@ export default function ChallengesPage() {
               </div>
 
               {/* Featured Card */}
-              <div className="relative overflow-hidden rounded-2xl border border-primary/30 group cursor-pointer">
+              <div onClick={() => goToDetail(999)} className="relative overflow-hidden rounded-2xl border border-primary/30 group cursor-pointer">
                   <div className="absolute inset-0 bg-gradient-to-r from-purple-900 to-indigo-900 opacity-80" />
                   <div className="absolute top-0 right-0 p-3">
                       <span className="flex items-center gap-1 bg-primary text-white text-[10px] font-bold px-2 py-1 rounded shadow-neon">
@@ -230,7 +236,7 @@ export default function ChallengesPage() {
               {/* List */}
               <div className="space-y-3">
                   {exploreChallenges.map((c) => (
-                      <div key={c.id} className="glass p-4 rounded-xl flex items-center gap-4 hover:border-primary/40 transition-colors cursor-pointer group">
+                      <div key={c.id} onClick={() => goToDetail(c.id)} className="glass p-4 rounded-xl flex items-center gap-4 hover:border-primary/40 transition-colors cursor-pointer group">
                           <div className={`h-12 w-12 rounded-lg ${c.image} flex items-center justify-center border border-white/5`}>
                               <Lock size={20} className="text-zinc-400 group-hover:text-white transition-colors" />
                           </div>

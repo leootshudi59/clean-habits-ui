@@ -164,5 +164,25 @@
     "menu_notifications": "Notifications & Reminders",
     "menu_language": "Language",
     "menu_account": "Account & Security"
+  },
+  "ChallengeDetail": {
+    "title": "Challenge Details",
+    "back_btn": "Back",
+    "status_open": "Open",
+    "participants": "{count} Habitants",
+    "pot_total": "Total Prize Pool",
+    "entry_stake": "Entry Stake",
+    "rules_title": "Smart Contract Rules",
+    "rule_duration": "Duration: {days} days",
+    "rule_frequency": "Frequency: {freq}",
+    "rule_threshold": "Min. threshold: {percent}%",
+    "distribution_title": "Pot Distribution",
+    "dist_winners": "Winners (>80%)",
+    "dist_savers": "Savers (70-80%)",
+    "dist_losers": "Losers (<70%)",
+    "social_title": "Participants",
+    "social_view_all": "View All",
+    "btn_stake": "Stake {amount} & Join",
+    "wallet_balance": "Balance: {amount}"
   }
 }
