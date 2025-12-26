@@ -83,6 +83,8 @@
     "profile_desc": "Suas estatísticas, troféus e configurações."
   },
   "Profile": {
+    "tab_overview": "Visão Geral",
+    "tab_shop": "Loja e Inventário",
     "level": "Nível {lvl}",
     "xp_next": "{current} / {max} XP",
     "total_earnings": "Ganhos Totais",
@@ -94,7 +96,20 @@
     "menu_integrations": "Integrações (Strava, etc.)",
     "menu_settings": "Configurações",
     "menu_help": "Ajuda e Suporte",
-    "logout": "Sair"
+    "logout": "Sair",
+    "shop_balance": "Saldo Disponível",
+    "item_skip_title": "Pulo Semanal",
+    "item_skip_desc": "Pule um dia sem perder sua sequência.",
+    "item_freeze_title": "Congelar Sequência",
+    "item_freeze_desc": "Congele sua sequência por 48h (Doença/Viagem).",
+    "item_doublexp_title": "XP Duplo",
+    "item_doublexp_desc": "Duplique seus pontos pelas próximas 24h.",
+    "item_revival_title": "Reviver Sequência",
+    "item_revival_desc": "Restaure uma sequência quebrada (1x por desafio).",
+    "lbl_free": "Grátis",
+    "lbl_owned": "{count} em estoque",
+    "btn_buy": "Comprar",
+    "btn_use": "Usar"
   },
   "Challenges": {
     "tab_mine": "Meus Desafios",
@@ -134,5 +149,20 @@
     "search_friends": "Buscar amigo...",
     "invite_btn": "Convidar Amigos",
     "group_tag": "Grupo Friends"
+  },
+  "Settings": {
+    "title": "Configurações",
+    "subtitle": "Gerencie sua assinatura e preferências.",
+    "plan_upgrade": "Seja Premium",
+    "plan_active": "Premium Ativo",
+    "benefit_analytics": "Estatísticas avançadas e mapas de calor",
+    "benefit_automation": "Integrações ilimitadas (Auto-check)",
+    "benefit_skips": "Mais Pulos e Temas exclusivos",
+    "btn_get_premium": "Obter CleanHabits+ ($9/mês)",
+    "btn_manage_sub": "Gerenciar assinatura",
+    "section_app": "Aplicativo",
+    "menu_notifications": "Notificações e Lembretes",
+    "menu_language": "Idioma",
+    "menu_account": "Conta e Segurança"
   }
 }

@@ -83,6 +83,8 @@
     "profile_desc": "Tus estadísticas, trofeos y configuración."
   },
   "Profile": {
+    "tab_overview": "Vista general",
+    "tab_shop": "Tienda e Inventario",
     "level": "Nivel {lvl}",
     "xp_next": "{current} / {max} XP",
     "total_earnings": "Ganancias Totales",
@@ -94,7 +96,20 @@
     "menu_integrations": "Integraciones (Strava, etc.)",
     "menu_settings": "Configuración",
     "menu_help": "Ayuda y Soporte",
-    "logout": "Cerrar Sesión"
+    "logout": "Cerrar Sesión",
+    "shop_balance": "Saldo Disponible",
+    "item_skip_title": "Salto Semanal",
+    "item_skip_desc": "Salta un día sin romper tu racha.",
+    "item_freeze_title": "Congelar Racha",
+    "item_freeze_desc": "Congela tu racha por 48h (Enfermedad/Viaje).",
+    "item_doublexp_title": "Doble XP",
+    "item_doublexp_desc": "Duplica tus puntos durante 24h.",
+    "item_revival_title": "Revivir Racha",
+    "item_revival_desc": "Restaura una racha rota (1x por desafío).",
+    "lbl_free": "Gratis",
+    "lbl_owned": "{count} en stock",
+    "btn_buy": "Comprar",
+    "btn_use": "Usar"
   },
   "Challenges": {
     "tab_mine": "Mis Desafíos",
@@ -134,5 +149,20 @@
     "search_friends": "Buscar amigo...",
     "invite_btn": "Invitar Amigos",
     "group_tag": "Grupo Friends"
+  },
+  "Settings": {
+    "title": "Configuración",
+    "subtitle": "Gestiona tu suscripción y preferencias.",
+    "plan_upgrade": "Ser Premium",
+    "plan_active": "Premium Activo",
+    "benefit_analytics": "Estadísticas avanzadas y mapas de calor",
+    "benefit_automation": "Integraciones ilimitadas (Auto-check)",
+    "benefit_skips": "Más Jokers y Temas exclusivos",
+    "btn_get_premium": "Obtener CleanHabits+ ($9/mes)",
+    "btn_manage_sub": "Gestionar suscripción",
+    "section_app": "Aplicación",
+    "menu_notifications": "Notificaciones y Recordatorios",
+    "menu_language": "Idioma",
+    "menu_account": "Cuenta y Seguridad"
   }
 }

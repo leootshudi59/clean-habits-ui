@@ -83,6 +83,8 @@
     "profile_desc": "Tes statistiques, tes trophées et tes paramètres."
   },
   "Profile": {
+    "tab_overview": "Vue d'ensemble",
+    "tab_shop": "Boutique & Inventaire",
     "level": "Niveau {lvl}",
     "xp_next": "{current} / {max} XP",
     "total_earnings": "Gains Totaux",
@@ -94,7 +96,20 @@
     "menu_integrations": "Intégrations (Strava, etc.)",
     "menu_settings": "Paramètres",
     "menu_help": "Aide & Support",
-    "logout": "Déconnexion"
+    "logout": "Déconnexion",
+    "shop_balance": "Solde disponible",
+    "item_skip_title": "Joker Hebdo",
+    "item_skip_desc": "Saute un jour sans perdre ton streak.",
+    "item_freeze_title": "Cryo-Stase",
+    "item_freeze_desc": "Gèle ton streak pour 48h (Vacances/Maladie).",
+    "item_doublexp_title": "Double XP",
+    "item_doublexp_desc": "Double tes points gagnés pendant 24h.",
+    "item_revival_title": "Phénix",
+    "item_revival_desc": "Ressuscite un streak brisé (1x par challenge).",
+    "lbl_free": "Gratuit",
+    "lbl_owned": "{count} en stock",
+    "btn_buy": "Acheter",
+    "btn_use": "Utiliser"
   },
   "Challenges": {
     "tab_mine": "Mes Challenges",
@@ -134,5 +149,20 @@
     "search_friends": "Chercher un ami...",
     "invite_btn": "Inviter des amis",
     "group_tag": "Groupe Friends"
+  },
+  "Settings": {
+    "title": "Paramètres",
+    "subtitle": "Gère ton abonnement et tes préférences.",
+    "plan_upgrade": "Passer Premium",
+    "plan_active": "Premium Actif",
+    "benefit_analytics": "Statistiques avancées & Heatmaps",
+    "benefit_automation": "Intégrations illimitées (Auto-check)",
+    "benefit_skips": "Plus de Jokers & Thèmes exclusifs",
+    "btn_get_premium": "Obtenir CleanHabits+ ($9/mois)",
+    "btn_manage_sub": "Gérer mon abonnement",
+    "section_app": "Application",
+    "menu_notifications": "Notifications & Rappels",
+    "menu_language": "Langue / Language",
+    "menu_account": "Compte & Sécurité"
   }
 }
