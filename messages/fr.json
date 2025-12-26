@@ -164,5 +164,25 @@
     "menu_notifications": "Notifications & Rappels",
     "menu_language": "Langue / Language",
     "menu_account": "Compte & Sécurité"
+  },
+  "ChallengeDetail": {
+    "title": "Détails du Challenge",
+    "back_btn": "Retour",
+    "status_open": "Ouvert",
+    "participants": "{count} Habitants",
+    "pot_total": "Cagnotte Totale",
+    "entry_stake": "Mise d'entrée",
+    "rules_title": "Règles du Smart Contract",
+    "rule_duration": "Durée : {days} jours",
+    "rule_frequency": "Fréquence : {freq}",
+    "rule_threshold": "Seuil min. : {percent}%",
+    "distribution_title": "Distribution du Pot",
+    "dist_winners": "Gagnants (>80%)",
+    "dist_savers": "Sauvés (70-80%)",
+    "dist_losers": "Perdants (<70%)",
+    "social_title": "Participants",
+    "social_view_all": "Voir tout",
+    "btn_stake": "Miser {amount} & Rejoindre",
+    "wallet_balance": "Solde : {amount}"
   }
 }
