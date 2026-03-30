@@ -7,21 +7,22 @@ ChainHabits is a **habit tracking** and **social challenge** platform where user
 - You join a **group challenge**.
 - You define the **habits** you commit to (with difficulty levels).
 - You **stake** an amount of tokens into a common pool (~ "betting" on your habits).
-- Every day you log your progress:
-  - manually (“I completed this habit”), or
-  - automatically via integrations (Strava, Github, health APIs, etc.).
+- Every day you log your progress using one of two proof types:
+  - **Tier A — Verified**: payout-eligible proof coming from verified integrations and supported devices (e.g. Strava, GitHub, health APIs, sensors, etc.).
+  - **Tier B — Self-report**: manual user input used for gamification, streaks and non-monetary progression only.
 - At the end of the challenge:
-  - scores are computed from your completion, difficulty and streaks,
-  - a smart contract distributes the pot based on those scores,
+  - payout-eligible scores are computed from verified completion data, difficulty and streaks,
+  - a smart contract finalizes and distributes the pot based on the resulting payout plan,
   - you can claim your rewards on-chain.
 
-Under the hood, the common pot is redistributed **pro-rata to your performance**, with a few configurable tiers. If everyone hits a high target (e.g. >90% of their points), then everyone simply gets back their full stake **plus a shared bonus**. Otherwise, users above a strong threshold (e.g. >85%) are guaranteed to recover their stake with a bonus, **funded by penalties from low performers** (e.g. <80%), who lose a small fraction of their stake for each missing percentage point (for example 0.5% per 1% of points not achieved). Top-tier users (e.g. >95%) can also receive extra non-monetary rewards like rare trophies or “skip habit” tokens. All thresholds and percentages are configurable per challenge.s
+Under the hood, the common pot is redistributed pro-rata of how well you stick to your routines, with a few performance tiers. If everyone completes more than a certain high threshold of their target points (for example >90%), then everyone simply gets back their full stake plus a shared bonus at the end of the challenge. Otherwise, users above a “strong performance” threshold (e.g. >85% of points) are guaranteed to get back their stake with a bonus, and that bonus pool is split between them pro-rata to their completion percentage. This bonus pool comes from the penalties of users who don’t reach the minimum bar (e.g. <80%): for each missing percentage point below that bar, they lose a small fraction of their initial stake (for example 0.5% of their stake per 1% of missing points) in their final payout. On top of that, users in the top tier (e.g. >95%) can earn extra non-monetary rewards from the app itself, such as rare trophies or “skip habit” tokens (see later). All thresholds and percentages are configurable and can be tuned per challenge.
 
 This repository focuses on the **web frontend**, built with **Next.js** in a **mobile-first** approach, and designed to plug into:
 
-- a **smart contract backend** (on-chain, source of truth for money, stakes and rewards),
-- a **lightweight NestJS API** (off-chain orchestration, scoring, integrations, caching),
-- a **NoSQL database** (MongoDB / Firestore for logs, configs, and metadata).
+- **smart contracts** (on-chain source of truth for stakes, challenge state and payouts),
+- a **lightweight NestJS API** (off-chain orchestration, scoring, integrations, webhooks, caching and job scheduling),
+- a **TEE-based verification layer** (e.g. a confidential verification app, potentially running through iExec, for Tier A verified integrations such as Strava or Github),
+- a **NoSQL database** (MongoDB / Firestore for metadata, logs, verification jobs, integration references and score snapshots).
 
 ---
 
@@ -36,6 +37,23 @@ This repository focuses on the **web frontend**, built with **Next.js** in a **m
   - earn back more than you staked if you perform well,
   - optional reward token / NFTs for streaks and achievements.
 
+### Proof tiers
+
+ChainHabits uses a two-tier proof model:
+
+- **Tier A — Verified**
+  - API-attested or device-backed proof.
+  - Examples: Strava, GitHub, health APIs, supported sensors/devices.
+  - **Only Tier A data is eligible for monetary payouts and pot distribution.**
+
+- **Tier B — Self-report**
+  - Manual user declarations such as “I completed this habit”.
+  - Used for gamification, streaks, XP, badges and soft progression.
+  - **Tier B data does not contribute to monetary payouts.**
+
+This distinction is a core security principle of the product:  
+**money depends on verifiable signals, while self-reported data primarily supports engagement and habit-building.**
+
 ### At a high level
 
 - **On-chain (smart contracts)**
@@ -46,8 +64,9 @@ This repository focuses on the **web frontend**, built with **Next.js** in a **m
 
 - **Off-chain (backend + DB)**
   - Habit definitions and daily logs.
-  - Integrations (Strava, Github, health APIs…).
-  - Scoring algorithm & Merkle tree generation.
+  - Verified integrations (Strava, Github, health APIs, supported devices).
+  - TEE-based verification for payout-eligible Tier A data.
+  - Scoring algorithm, payout plan generation and Merkle tree preparation.
   - Social feed, notifications, analytics.
 
 - **Clients**
@@ -204,13 +223,7 @@ So limits, transparency, and a clear health/progression angle are integral to th
 
 ## 💻 Frontend – Web App (Next.js)
 
-This repository focuses on the **web frontend** of ChainHabits: a **Next.js** (App Router) app, built **mobile-first** and designed to plug into:
-
-- a **smart contract backend** (on-chain, source of truth for money, stakes and rewards),
-- a **lightweight NestJS API** (off-chain orchestration, scoring, integrations, caching),
-- a **NoSQL database** (MongoDB / Firestore for logs, configs, and metadata).
-
-It is built to be:
+This repo contains the **web frontend of ChainHabits**, built to be:
 
 - **Mobile-first**: layouts and navigation optimised for small screens first.
 - **Web3-oriented**: wallet-based identity, crypto/finance visual codes.
